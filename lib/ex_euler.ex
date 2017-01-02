@@ -4,15 +4,12 @@ defmodule ExEuler do
   """
 
   @doc """
-  Hello world.
-
-  ## Examples
-
-      iex> ExEuler.hello
-      :world
-
+  Show the results in the Terminal.
   """
-  def hello do
-    :world
+  def run do
+    IO.puts "Problem 001"
+    IO.inspect ExEuler.Problem001.solve
+    IO.puts "Problem 002"
+    IO.inspect ExEuler.Problem002.solve
   end
 end
